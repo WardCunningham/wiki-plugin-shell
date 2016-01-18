@@ -1,0 +1,37 @@
+{
+  "title": "About Shell Plugin",
+  "story": [
+  {
+    "type": "paragraph",
+    "id": "f73a1f3125fec131",
+    "text": "Here we describe the purpose of the plugin and include a sample."
+  },
+  {
+    "type": "shell",
+    "id": "a832777944c36045",
+    "text": "This is text in the new plugin. You can *double-click* to edit it too."
+  }
+],
+  "journal": [
+  {
+    "type": "create",
+    "item": {
+      "title": "About Shell Plugin",
+      "story": [
+  {
+    "type": "paragraph",
+    "id": "f73a1f3125fec131",
+    "text": "Here we describe the purpose of the plugin and include a sample."
+  },
+  {
+    "type": "shell",
+    "id": "a832777944c36045",
+    "text": "This is text in the new plugin. You can *double-click* to edit it too."
+  }
+]
+    },
+    "date": 1453082261000,
+    "certificate": "from mkplugin.sh"
+  }
+]
+}
