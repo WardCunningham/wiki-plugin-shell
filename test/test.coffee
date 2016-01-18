@@ -8,6 +8,10 @@ describe 'shell plugin', ->
 
   describe 'expand', ->
 
-    it 'can make itallic', ->
-      result = shell.expand 'hello *world*'
-      expect(result).to.be 'hello <i>world</i>'
+    it 'can break lines', ->
+      result = shell.expand "hello\nworld"
+      expect(result).to.be 'hello<br>world'
+
+    it 'can remove backspace overstrikes', ->
+      result = shell.expand "H\bHE\bEL\bLL\bLO\bO"
+      expect(result).to.be 'HELLO'

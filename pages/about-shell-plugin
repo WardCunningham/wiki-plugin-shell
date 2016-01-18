@@ -1,37 +1,58 @@
 {
   "title": "About Shell Plugin",
   "story": [
-  {
-    "type": "paragraph",
-    "id": "f73a1f3125fec131",
-    "text": "Here we describe the purpose of the plugin and include a sample."
-  },
-  {
-    "type": "shell",
-    "id": "a832777944c36045",
-    "text": "This is text in the new plugin. You can *double-click* to edit it too."
-  }
-],
-  "journal": [
-  {
-    "type": "create",
-    "item": {
-      "title": "About Shell Plugin",
-      "story": [
-  {
-    "type": "paragraph",
-    "id": "f73a1f3125fec131",
-    "text": "Here we describe the purpose of the plugin and include a sample."
-  },
-  {
-    "type": "shell",
-    "id": "a832777944c36045",
-    "text": "This is text in the new plugin. You can *double-click* to edit it too."
-  }
-]
+    {
+      "type": "paragraph",
+      "id": "f73a1f3125fec131",
+      "text": "Run text entered into the item as shell commands on the origin server. See output and errors when the commands complete."
     },
-    "date": 1453082261000,
-    "certificate": "from mkplugin.sh"
-  }
-]
+    {
+      "type": "shell",
+      "id": "a832777944c36045",
+      "text": "time date"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "About Shell Plugin",
+        "story": [
+          {
+            "type": "paragraph",
+            "id": "f73a1f3125fec131",
+            "text": "Here we describe the purpose of the plugin and include a sample."
+          },
+          {
+            "type": "shell",
+            "id": "a832777944c36045",
+            "text": "This is text in the new plugin. You can *double-click* to edit it too."
+          }
+        ]
+      },
+      "date": 1453082261000,
+      "certificate": "from mkplugin.sh"
+    },
+    {
+      "type": "edit",
+      "id": "f73a1f3125fec131",
+      "item": {
+        "type": "paragraph",
+        "id": "f73a1f3125fec131",
+        "text": "Run text entered into the item as shell commands on the origin server. See output and errors when the commands complete."
+      },
+      "date": 1453085412738
+    },
+    {
+      "type": "edit",
+      "id": "a832777944c36045",
+      "item": {
+        "type": "shell",
+        "id": "a832777944c36045",
+        "text": "time date"
+      },
+      "date": 1453085439306
+    }
+  ],
+  "plugin": "shell"
 }
