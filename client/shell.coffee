@@ -26,7 +26,10 @@ bind = ($item, item) ->
     """
   $item.find('button').click ->
     $item.find('.reply').remove()
-    $.post '/plugin/shell', item, report
+    req = $.post '/plugin/shell', item, report
+    req.fail (jqXHR, textStatus, errorThrown) ->
+      report {stdout:'', stderr: "#{textStatus}: #{errorThrown}\n#{jqXHR.responseText}"}
+
 
 
 window.plugins.shell = {emit, bind} if window?

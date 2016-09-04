@@ -1,6 +1,6 @@
 {
   "name": "wiki-plugin-shell",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Federated Wiki - Shell Plugin",
   "keywords": [
     "shell",
