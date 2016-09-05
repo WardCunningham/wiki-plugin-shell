@@ -28,7 +28,7 @@ bind = ($item, item) ->
     $item.find('.reply').remove()
     req = $.post '/plugin/shell', item, report
     req.fail (jqXHR, textStatus, errorThrown) ->
-      report {stdout:'', stderr: "#{textStatus}: #{errorThrown}\n#{jqXHR.responseText}"}
+      report {stdout:'', stderr: "#{textStatus}: #{errorThrown}\n#{JSON.stringify(jqXHR.responseJSON||{}, null, '  ')}"}
 
 
 

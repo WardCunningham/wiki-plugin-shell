@@ -9,8 +9,9 @@ startServer = (params) ->
     if app.securityhandler.isAdmin(req)
       next()
     else
-      console.log 'rejecting', req.path
-      res.status(403).send {admin: argv.admin || "undefined", user: req.session?.passport?.user || "unknown"}
+      admin = argv.admin || "undefined"
+      user = req.session?.passport?.user || req.session?.email || "unknown"
+      res.status(403).send {admin, user}
 
   app.post '/plugin/shell', authorizedAsAdmin, (req, res) ->
     exec req.body.text, (error, stdout, stderr) ->
